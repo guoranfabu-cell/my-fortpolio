@@ -177,9 +177,13 @@ footer {
    모바일 반응형 최적화
    ========================================= */
 @media (max-width: 768px) {
-  header .container { flex-direction: column; gap: 10px; }
-  nav a { margin: 0 10px; font-size: 0.9rem; }
-  .about-page { padding-top: 140px; }
+  header .container { flex-direction: column; gap: 15px; }
+  .logo { font-size: 8vw; }
+  nav { display: grid; grid-template-columns: 1fr 1fr; width: 100%; gap: 10px; text-align: center; }
+  nav a { margin: 0; padding: 8px; background: #f8fafc; border-radius: 8px; font-size: 0.95rem; }
+  
+  /* 헤더가 뚱뚱해졌으므로 본문이 안 가려지게 여백 160px로 증가 */
+  .about-page { padding-top: 160px; } 
   .about-grid { padding: 30px 20px; width: 90%; }
   section h2 { font-size: 2rem; }
 }
