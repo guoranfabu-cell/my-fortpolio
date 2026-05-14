@@ -238,12 +238,15 @@ footer {
    ========================================= */
 @media (max-width: 768px) {
   body { overflow-y: auto; }
-  header .container { flex-direction: column; gap: 10px; }
-  nav a { margin: 0 10px; font-size: 0.9rem; }
-  .contact-page { height: auto; min-height: 100vh; padding: 140px 0 80px 0; }
+  header .container { flex-direction: column; gap: 15px; }
+  .logo { font-size: 8vw; }
+  nav { display: grid; grid-template-columns: 1fr 1fr; width: 100%; gap: 10px; text-align: center; }
+  nav a { margin: 0; padding: 8px; background: #white; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 0.95rem; }
+  
+  .contact-page { height: auto; min-height: 100vh; padding: 160px 0 80px 0; }
   .contact-box { padding: 35px 25px; width: 90%; }
   .contact-box h2 { font-size: 2rem; }
-  .input-group { grid-template-columns: 1fr; gap: 15px; } /* 이름/이메일 입력칸을 위아래로 */
+  .input-group { grid-template-columns: 1fr; gap: 15px; }
   .mobile-break { display: block; }
-  footer { position: relative; } /* 푸터가 카드 위에 겹치는 현상 방지 */
+  footer { position: relative; }
 }
