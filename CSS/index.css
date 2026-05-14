@@ -151,8 +151,27 @@ footer {
    ========================================= */
 @media (max-width: 768px) {
   body { overflow: auto; }
-  header .container { flex-direction: column; gap: 10px; }
-  nav a { margin: 0 10px; font-size: 0.9rem; }
-  .hero h2 { font-size: 2rem; }
+  header .container { flex-direction: column; gap: 15px; }
+  
+  /* 로고 글자를 창 크기에 비례하게 (Viewport Width) */
+  .logo { font-size: 8vw; } 
+  
+  /* 네비게이션을 2x2 그리드로 변경 */
+  nav { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    width: 100%; 
+    gap: 10px; 
+    text-align: center; 
+  }
+  nav a { 
+    margin: 0; 
+    padding: 8px; 
+    background: #f8fafc; /* 터치하기 쉽게 버튼 모양으로 */
+    border-radius: 8px;
+    font-size: 0.95rem;
+  }
+  
+  .hero h2 { font-size: 2.2rem; }
   .hero p { font-size: 1rem; }
 }
