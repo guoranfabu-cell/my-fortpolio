@@ -37,3 +37,14 @@ section h2 { text-align: center; font-size: 2.5rem; margin-bottom: 40px; color: 
 .project-card:hover .card-img { background: #e0e7ff; }
 .project-card h3 { color: #1e293b; margin-bottom: 5px; }
 .project-card p { color: #64748b; font-size: 0.95rem; }
+
+/* =========================================
+   모바일 반응형 최적화
+   ========================================= */
+@media (max-width: 768px) {
+  header .container { flex-direction: column; gap: 10px; }
+  nav a { margin: 0 10px; font-size: 0.9rem; }
+  .projects-page { padding-top: 140px; }
+  .project-grid { grid-template-columns: 1fr; } /* 카드를 1열로 세로 배치 */
+  .project-card { margin-bottom: 20px; }
+}
